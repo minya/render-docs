@@ -44,8 +44,8 @@ module.exports = {
 
 				file.contents = new Buffer(data);
 				file.path = replaceExtension(file.path, '.html');
-				var css = fs.readFileSync('layout.css', { encoding: 'utf8' });
-				var layout = fs.readFileSync('layout.html', { encoding: 'utf8' });
+				var css = fs.readFileSync(require.resolve('./layout.css'), { encoding: 'utf8' });
+				var layout = fs.readFileSync(require.resolve('./layout.html'), { encoding: 'utf8' });
 
 				var html = layout
 					.replace('<!-- css -->', css)
