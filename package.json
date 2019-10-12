@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "html-pdf": "^0.3.0",
+    "html-pdf": "^2.2.1",
     "marked": "^0.3.2",
     "marked-toc": "^0.2.6",
     "through2": "^0.6.2"
